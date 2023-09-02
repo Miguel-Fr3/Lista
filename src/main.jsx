@@ -16,18 +16,19 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/" , 
-      element: <Home/>
+        element: <Home/>
     },
       {
         path: "/produtos" ,
-       element: <Produtos/>
+        element: <Produtos/>
       },
       {
-        path: "/produtos/editar/:id" ,
-       element: <EditarProdutos/>
-      },
+        path: "/produtos/editar/:id",
+        element: <EditarProdutos/>
+      }
 
-    ]}
+    ]
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
