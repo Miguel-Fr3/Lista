@@ -9,16 +9,23 @@ import Error from './routes/Error/Index.jsx'
 import EditarProduto from './routes/EditarProdutos/index.jsx'
 
 const router = createBrowserRouter([
-  {path: "/" ,
-   element: <App/>,
+  {
+    path: "/" ,
+    element: <App/>,
     errorElement: <Error/>,
     children:[
-      {path: "/" , 
-      element: <Home/>},
-      {path: "/produtos" ,
-       element: <Produtos/>},
-      {path: "/produtos/editar/:id" ,
-       element: <EditarProdutos/>},
+      {
+        path: "/" , 
+      element: <Home/>
+    },
+      {
+        path: "/produtos" ,
+       element: <Produtos/>
+      },
+      {
+        path: "/produtos/editar/:id" ,
+       element: <EditarProduto/>
+      },
 
     ]}
 ])
